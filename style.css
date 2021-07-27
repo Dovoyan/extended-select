@@ -1,3 +1,136 @@
-.visually-hidden{
-    display: none;
+button {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+}
+
+input {
+  float: left;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 626px;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-top-name {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #272526;
+}
+
+.card-top-selected {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #035b77;
+  cursor: pointer;
+}
+
+.card-body-input {
+  padding: 10px;
+  cursor: pointer;
+  width: 96%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  color: #272526;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 640px;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.modal-head {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.modal-search-input {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.modal-footer-apply {
+  background: #035b77;
+  border-radius: 4px;
+  border: 0px;
+  padding: 11px 20px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.modal-footer-delete {
+  border: 0px;
+  background-color: white;
+}
+
+.margin-all {
+  margin-left: 15px;
+}
+
+.wrapmodal {
+  display: flex;
+}
+
+.hideChild {
+  width: 13px;
+  height: 13px;
+  margin-top: 3px;
+  position: absolute;
+  margin-left: 32px;
+  background: url(./icnon/down_icon-icons.com_61209.png);
+  background-size: cover;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.perevorot {
+  transform: rotate(0deg);
 }
