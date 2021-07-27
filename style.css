@@ -74,6 +74,8 @@ input {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .modal-search-input {
@@ -133,4 +135,15 @@ input {
 
 .perevorot {
   transform: rotate(0deg);
+}
+
+.backArrow {
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  background: url(./icnon/down_icon-icons.com_61209.png);
+  background-size: cover;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }

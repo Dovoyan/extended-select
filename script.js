@@ -44,14 +44,16 @@ function drawModal() {
     const body = document.querySelector("body");
     const modal = document.createElement('div');
     const modalHead = document.createElement('div');
+    const modalHeadTitle = document.createElement('div');
     const modalContent = document.createElement('div');
     const modalSearch = document.createElement('div');
     const modalFooter = document.createElement('div');
     const modalSearchInput = document.createElement('input');
     const modalFooterApply = document.createElement('button');
     const modalFooterDelete = document.createElement('button');
+    const backArrow = document.createElement('div');
 
-
+    backArrow.classList.add('backArrow')
     modal.classList.add("modal");
     modal.classList.add("visually-hidden");
     modalHead.classList.add("modal-head");
@@ -62,9 +64,16 @@ function drawModal() {
     modalFooterDelete.classList.add("modal-footer-delete");
     modalSearchInput.classList.add("modal-search-input");
 
-    modalHead.innerHTML = "Реализуемые товары";
+
+    modalHeadTitle.innerHTML = "Реализуемые товары";
+    modalHead.append(backArrow);
+    modalHead.append(modalHeadTitle);
     modalFooterApply.innerHTML = "Применить";
     modalFooterDelete.innerHTML = "Очистить";
+
+    backArrow.addEventListener('click', () => {
+        toggleModal();
+    });
 
     modalFooterApply.addEventListener('click', () => {
         toggleModal();
