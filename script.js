@@ -243,11 +243,11 @@ function deleteChek() {
 function searchChek(value) {
     const labels = document.querySelectorAll('.modalLabel');
     const modalContent = document.querySelector('.modal-content');
-
     if (value != "") {
         labels.forEach(element => {
 
             if (element.innerHTML.toLowerCase().indexOf(value.toLowerCase()) + 1) {
+
                 element.parentNode.classList.remove('visually-hidden');
             } else {
                 element.parentNode.classList.add('visually-hidden');
@@ -276,4 +276,4 @@ selectInit()
 
 
 
-// drawCard("Тендеры в роли Заказчика")
+

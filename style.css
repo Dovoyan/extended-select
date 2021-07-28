@@ -64,10 +64,6 @@ input {
   z-index: 2;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .modal-head {
   font-family: Source Sans Pro;
   font-style: normal;
@@ -146,4 +142,8 @@ input {
   transform: rotate(90deg);
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.visually-hidden {
+  display: none;
 }
